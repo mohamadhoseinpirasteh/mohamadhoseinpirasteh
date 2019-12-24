@@ -1,0 +1,148 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*mobile device*/
+body{
+    background-color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background: url('https://www.elsetge.cat/myimg/f/0-7348_download-the-stunning-new-macbook-pro-wallpaper-here.jpg'); */
+    background: url("http://papers.co/wallpaper/papers.co-au81-apple-macbook-new-dark-pop-illustration-art-color-8-wallpaper.jpg?download=true");
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header div{
+    width: 250px;
+    height: auto;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+}
+#avatar{
+    width: 200px;
+    height: 200px;
+    background-color: #b7b7b7;
+    border-radius: 12px;
+}
+header .social {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .social img {
+    width: 40px;
+    height: 40px;
+}
+.name {
+    color: #fff;
+}
+.skills {
+    color: #fff;
+}
+section div {
+    margin-top: 10px ;
+}
+.title_section {
+    font-weight: bold;
+    font-size: 27px;
+    margin: 1vh 0px;
+    padding: 0px 1px;
+    word-wrap: break-word;
+}
+.about_section {
+    font-size: 18px;
+}
+.bottom_section {
+    font-weight: bold;
+    font-size: 14px;
+}
+.mamad {
+    flex-direction: none;
+    color: #000;
+    display: flex;
+    justify-content: center;
+}
+/*tablet*/
+.main{
+    display: block;
+
+}
+.project{
+    margin: 18px;
+    background-color: #0d0d0d;
+    border-radius: 12px;
+    padding: 5%;
+}
+.project h2{
+    color: #fff;
+    margin-bottom: 18px;
+}
+.project p{
+    color: #eee;
+    line-height: 22px;
+}
+@media screen and (min-width: 475px){
+    body{
+        display: block;
+    }
+    .title_section {
+        font-size: 35px;
+    }
+    .about_section {
+        font-size: 23px;
+    }
+    .bottom_section {
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+    
+}
+
+/*desktop*/
+@media screen and (min-width: 768px){
+    body{
+        display: flex;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .main{
+        width: auto;
+        height: 100vh;
+    }
+    .project{
+        background-color: #161616;
+        padding: 5%;
+        border-radius: 12px;
+        margin: 18px;
+        box-shadow: 0 6px 32px -6px rgba(46, 78, 165, 0.4)
+    }
+    .project h2{
+        color: #fff;
+        margin-bottom: 18px;
+    }
+    .project p{
+        color: #eee;
+        line-height: 24px;
+    }
+
+}
